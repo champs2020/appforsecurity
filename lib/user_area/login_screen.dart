@@ -57,7 +57,7 @@ class _LoginState extends State<Login> {
                       onPressed: () async{
                         if(_formkey.currentState.validate()){
                           setState(() => loading = true);
-                          dynamic result = await _auth.SignInUser(email, password);
+                          dynamic result = await _auth.signInUser(email, password);
 
                           if(result == null) {
                             setState(() {
